@@ -4,36 +4,31 @@
   box-sizing: border-box;
 }
 
-/*variables in the root, available for all CSS, use it with var(--VARIABLE_NAME)*/
+//variables in the root, available for all CSS, use it with var(--VARIABLE_NAME)
 :root {
   --card-color-primary: #f7dd43;
   --card-title-border-color: #746615;
   --card-bg-color: #1d1c19;
-  --bg: url(./assets/bg-yellow.svg);
 }
 
-/*classes for custommization*/
+//classes for custommization
 body.green {
   --card-color-primary: #047c3f;
   --card-title-border-color: #047c3f;
-  --card-bg-color: #1a1f1b;
-  --bg: url(./assets/bg-green.svg);
+  --card-bg-color: #1d1c19;
 }
 
 body.blue {
   --card-color-primary: #338af3;
   --card-title-border-color: #338af3;
   --card-bg-color: #202024;
-  --bg: url(./assets/bg-blue.svg);
 }
 
 body {
   background-color: #121214;
-  background-image: var(--bg);
-  background-position: center;
-
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(./assets/bg.svg);
+  background-position-x: center;
+  background-position-y: -715px;
 }
 
 ul {
@@ -42,8 +37,7 @@ ul {
 
 #app {
   width: fit-content;
-  margin: auto;
-  padding-top: 52px;
+  margin: 52px auto;
 }
 
 header {
@@ -63,7 +57,7 @@ header {
   padding: 32px 23px;
   text-align: center;
 
-  background: var(--card-bg-color);
+  background: #1d1c19;
   border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
 }
